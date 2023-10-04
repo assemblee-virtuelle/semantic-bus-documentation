@@ -60,10 +60,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My 1st dinosaurs site',
+        title: 'Bus Sémantique',
         logo: {
-          alt: 'My 1st dinosaurs site logo',
-          src: 'img/logo.svg',
+          alt: 'logo du bus sémantique',
+          src: 'img/logo-grappe.png',
         },
         items: [
           {
@@ -74,7 +74,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/assemblee-virtuelle/semantic-bus-documentation',
+            href: 'https://github.com/assemblee-virtuelle/semantic-bus',
             label: 'GitHub',
             position: 'right',
           },
@@ -96,29 +96,17 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/users/1490636/maksim-kostromin',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/daggerok',
-              },
+                label: 'Discourse (French)',
+                href: 'https://forums.assemblee-virtuelle.org/c/projets/bus-semantique/',
+              }
             ],
           },
           {
-            title: 'More',
+            title: 'Social',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/daggerok/docusaurus-examples',
+                href: 'https://github.com/assemblee-virtuelle/semantic-bus',
               },
             ],
           },
