@@ -5,6 +5,6 @@ services:
     build:
       context: .
       dockerfile: dockerfile
-    command: /bin/sh -c "npm run build && GIT_USER=Mikoteko USE_SSH=true npm run deploy"
+    command: /bin/sh -c "npm run build && npm run deploy"
     ports:
       - "8080:80"
