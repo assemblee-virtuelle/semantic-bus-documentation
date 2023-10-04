@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  docusaurus:
+    build:
+      context: .
+      dockerfile: dockerfile
+    command: /bin/sh -c "npm run build && GIT_USER=Mikoteko USE_SSH=true npm run deploy"
+    ports:
+      - "8080:80"
