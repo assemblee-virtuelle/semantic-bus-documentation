@@ -3,11 +3,14 @@ module.exports = {
   tagline: 'Documentation of the Semantic Bus',
   url: 'https://assemblee-virtuelle.github.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  
   organizationName: 'assemblee-virtuelle', // Replace with your GitHub username
   projectName: 'semantic-bus-documentation', // Replace with your GitHub repository name
+  deploymentBranch: 'deployement-test',
+  trailingSlash: false,
 
   themeConfig: {
     navbar: {
