@@ -2,12 +2,6 @@
 sidebar_position: 1
 ---
 
-# TEST 22222 pour voir si les modifications se font automatiquement ou non !!!!
-
-
-TEEEEEEEEEEEEEEEEEEEEEE
-UBYyyyyyyyyyyyyyyy
-
 ## Getting Started
 
 Get started by **creating a new site**.
