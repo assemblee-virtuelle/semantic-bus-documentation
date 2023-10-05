@@ -6,6 +6,8 @@ sidebar_position: 1
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
+#### TEST pour voir si les modifications se font automatiquement ou non !!!!
+
 ## Getting Started
 
 Get started by **creating a new site**.
