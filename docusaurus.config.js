@@ -9,7 +9,7 @@ module.exports = {
   
   organizationName: 'assemblee-virtuelle', // Replace with your GitHub username
   projectName: 'semantic-bus-documentation', // Replace with your GitHub repository name
-  deploymentBranch: 'deployment',
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
   themeConfig: {
