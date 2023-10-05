@@ -2,7 +2,7 @@ module.exports = {
   title: 'Semantic Bus',
   tagline: 'Documentation of the Semantic Bus',
   url: 'https://assemblee-virtuelle.github.io',
-  baseUrl: '/',
+  baseUrl: '/semantic-bus-documentation/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
