@@ -89,19 +89,6 @@ module.exports = {
     ],
   ],
 
-  webpack: {
-    configure: (webpackConfig, { isServer, defaultLoaders }) => {
-      if (!isServer) {
-        webpackConfig.resolve.alias = {
-          ...webpackConfig.resolve.alias,
-          '@src': path.join(__dirname, 'src'),
-        };
-      }
-
-      return webpackConfig;
-    },
-  },
-
   // presets: [
   //   [
   //     '@docusaurus/preset-classic',
