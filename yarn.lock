@@ -7703,6 +7703,11 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
+zero-md@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/zero-md/-/zero-md-2.5.3.tgz#d5bfc42088a648f79802933071b24a639db2ea36"
+  integrity sha512-R248nqZKDT4fA3J3GdN+oa2KgdcSfxmRF3UeuGlzYVrpG1v+0WzlF669jZJOzY3qD6gaEQYCU5YOfTdqcaZ+zQ==
+
 zwitch@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-1.0.5.tgz#d11d7381ffed16b742f6af7b3f223d5cd9fe9920"
