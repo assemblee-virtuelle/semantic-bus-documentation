@@ -89,6 +89,15 @@ module.exports = {
     ],
   ],
 
+  scripts: [
+    // "@site/node_modules/zero-md/dist/zero-md.min.js",
+    {
+      src: "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js",
+      async: false,
+      type: "module",
+    }
+  ],
+
   // presets: [
   //   [
   //     '@docusaurus/preset-classic',
