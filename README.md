@@ -154,7 +154,7 @@ jobs:
 Now you can try and update one of your documents.
 If you see a green workflow in https://github.com/assemblee-virtuelle/semantic-bus-documentation/actions in the section Deploy to Github Pages it means that your update is on the gh-pages branch and this branch has been deployed as a github page. (You still need to check if the workflow pages build and deployment worked to see if the github page was successfully updated)
 
-![Alt text](image.png)
+![Alt text](./readme-ressx/image.png)
 
 
 

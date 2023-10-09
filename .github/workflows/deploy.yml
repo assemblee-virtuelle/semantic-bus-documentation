@@ -20,8 +20,29 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
       - name: Build website
         run: yarn build
+
+      - name: Checkout Wiki Repository
+        uses: actions/checkout@v2
+        with:
+          repository: assemblee-virtuelle/Semantic-Bus.wiki.git
+          path: wiki
+
+        # copies markdown files from the wiki to current folder
+        name: Copy Markdown Files
+        run: |
+          cp -r wiki/* docs/bus-wiki/
+
+        # saves imported files in main branch
+        name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Imported wiki docs"
+          git push
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
