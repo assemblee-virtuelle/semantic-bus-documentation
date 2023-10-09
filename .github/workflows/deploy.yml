@@ -12,39 +12,43 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
 
-      - name: Install dependencies
+      # installs the dependancies of 
+      # the docusaurus package with the
+      # package.json file
+      - name: Install Docusaurus dependancies
         run: yarn install --frozen-lockfile
 
-      - name: Build website
+      # builds the Docusaurus website
+      - name: Build Docusaurus
         run: yarn build
 
-      - name: Checkout Wiki Repository
-        uses: actions/checkout@v2
+      # checks out the wiki into the repo
+      # Semantic-Bus.wiki
+      - name: Checkout Semantic Bus Wiki Repo
+        uses: actions/checkout@v4
         with:
           repository: "assemblee-virtuelle/Semantic-Bus.wiki"
           ref: "master"
           path: "Semantic-Bus.wiki"
           token: ${{ secrets.WIKI_PAT }}
 
-        # lists the files
-      - name: List Files in Current Directory
-        run: |
-          ls -l
-
+        # lists the files in the semantic wiki folder
+        # used for debugging
       - name: List Files in Semantic Bus Directory
         run: |
           ls -l ./Semantic-Bus.wiki/
 
         # copies markdown files from the wiki to current folder
+        # replaces the files if already existing
       - name: Copy Markdown Files
         run: |
-          cp -r Semantic-Bus.wiki/* docs/bus-wiki/
+          \cp -r Semantic-Bus.wiki/* docs/bus-wiki/
 
         # saves imported files in main branch
       - name: Commit and Push
