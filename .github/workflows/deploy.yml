@@ -34,7 +34,7 @@ jobs:
 
       - name: List Files in Current Directory
         run: |
-        ls -l
+          ls -l
 
         # copies markdown files from the wiki to current folder
       - name: Copy Markdown Files
