@@ -32,10 +32,14 @@ jobs:
           path: "Semantic-Bus.wiki"
           token: ${{ secrets.WIKI_PAT }}
 
+      - name: List Files in Current Directory
+        run: |
+        ls -l
+
         # copies markdown files from the wiki to current folder
       - name: Copy Markdown Files
         run: |
-          cp -r wiki/* docs/bus-wiki/
+          cp -r * docs/bus-wiki/
 
         # saves imported files in main branch
       - name: Commit and Push
