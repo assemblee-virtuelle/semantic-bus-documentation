@@ -27,9 +27,9 @@ jobs:
       - name: Checkout Wiki Repository
         uses: actions/checkout@v2
         with:
-          repository: assemblee-virtuelle/Semantic-Bus.wiki.git
-          ref: main
-          path: wiki
+          repository: "assemblee-virtuelle/Semantic-Bus.wiki"
+          ref: "master"
+          path: "Semantic-Bus.wiki"
           token: ${{ secrets.WIKI_PAT }}
 
         # copies markdown files from the wiki to current folder
