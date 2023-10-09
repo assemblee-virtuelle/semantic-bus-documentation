@@ -31,12 +31,12 @@ jobs:
           path: wiki
 
         # copies markdown files from the wiki to current folder
-        name: Copy Markdown Files
+      - name: Copy Markdown Files
         run: |
           cp -r wiki/* docs/bus-wiki/
 
         # saves imported files in main branch
-        name: Commit and Push
+      - name: Commit and Push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
