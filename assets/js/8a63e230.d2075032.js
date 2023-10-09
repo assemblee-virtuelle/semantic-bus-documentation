@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksemantic_bus_documentation=self.webpackChunksemantic_bus_documentation||[]).push([[2487],{4902:(e,n,t)=>{t.r(n),t.d(n,{default:()=>l});var a=t(7294);const l=e=>{let{label:n,content:t,link:l,link2:u}=e;return a.createElement(a.Fragment,null)}}}]);
