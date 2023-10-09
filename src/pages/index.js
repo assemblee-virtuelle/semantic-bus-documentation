@@ -48,19 +48,19 @@ function HomepageHeader() {
 }
 
 function BusFeatures(){
-  <section className={classnames(styles.tools, styles.contrast)}>
-    <div className={styles.wrapper}>
-      <h2>Intégrez vos données provenant de : </h2>
-      <ul>
-        <li className={styles.toolCard}>
-          <Tool label='InfluxDB' link='https://www.influxdata.com/' />
-        </li>
-        <li className={styles.toolCard}>
-          <Tool label='Google Sheet' link='https://www.google.fr/intl/fr/sheets/about/' />
-        </li>
-      </ul>
-    </div>
-  </section>
+  // <section className={classnames(styles.tools, styles.contrast)}>
+  //   <div className={styles.wrapper}>
+  //     <h2>Intégrez vos données provenant de : </h2>
+  //     <ul>
+  //       <li className={styles.toolCard}>
+  //         <Tool label='InfluxDB' link='https://www.influxdata.com/' />
+  //       </li>
+  //       <li className={styles.toolCard}>
+  //         <Tool label='Google Sheet' link='https://www.google.fr/intl/fr/sheets/about/' />
+  //       </li>
+  //     </ul>
+  //   </div>
+  // </section>
 }
 
 export default function Home() {
@@ -70,7 +70,6 @@ export default function Home() {
       description="Documentation du Bus Sémantique">
       <HomepageHeader />
       <main>
-        <BusFeatures />
       </main>
     </Layout>
   );
