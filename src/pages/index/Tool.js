@@ -1,13 +1,9 @@
 import React from 'react';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "animate.css/animate.min.css";
-import styles from './index.module.scss';
-import CubesIcon from './CubesIcon';
 
 const Tool = ({ label, content, link, link2 }) => {
   return (
     <>
-      <div className={styles.iconContainer}>
+      {/* <div className={styles.iconContainer}>
         <CubesIcon />
       </div>
       <div className={styles.textContainer}>
@@ -24,7 +20,7 @@ const Tool = ({ label, content, link, link2 }) => {
           </AnimationOnScroll>
         </div>
         <div className={styles.toolDescription}>{content}</div>
-      </div>
+      </div> */}
     </>
   );
 };
