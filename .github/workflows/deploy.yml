@@ -30,6 +30,7 @@ jobs:
           repository: assemblee-virtuelle/Semantic-Bus.wiki.git
           ref: main
           path: wiki
+          token: ${{ secrets.WIKI_PAT }}
 
         # copies markdown files from the wiki to current folder
       - name: Copy Markdown Files
