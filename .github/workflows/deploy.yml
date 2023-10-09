@@ -39,7 +39,7 @@ jobs:
 
       - name: List Files in Semantic Bus Directory
         run: |
-          ls -l ./Semantic-bus.wiki
+          ls -l ./Semantic-Bus.wiki/
 
         # copies markdown files from the wiki to current folder
       - name: Copy Markdown Files
