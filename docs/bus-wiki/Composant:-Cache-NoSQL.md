@@ -4,7 +4,7 @@ Met en cache les données pour pouvoir les réinterroger plus tard.
 
 Ce composant permet de stocker les données traitées dans une base de données (cache). 
 Cela permet d’avoir toujours des données finalisées à disposition sans avoir besoin de refaire tous les calculs.
-La mise en cache permet de gagner en performance, il faut donc l'utiliser sans modération lors du débuggage de flux de données !
+La mise en cache permet de gagner en performance, il faut donc l'utiliser sans modération lors du débuggage de flux de données .
 
 ### Mise en garde ⚠️ 
 
