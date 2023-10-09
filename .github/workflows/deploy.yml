@@ -32,9 +32,14 @@ jobs:
           path: "Semantic-Bus.wiki"
           token: ${{ secrets.WIKI_PAT }}
 
+        # lists the files
       - name: List Files in Current Directory
         run: |
           ls -l
+
+      - name: List Files in Semantic Bus Directory
+        run: |
+          ls -l ./Semantic-bus.wiki
 
         # copies markdown files from the wiki to current folder
       - name: Copy Markdown Files
@@ -47,7 +52,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Imported wiki docs"
+          git commit -m "Imported Semantic Bus wiki documents"
           git push
 
       # Popular action to deploy to GitHub Pages:
