@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Bus Sémantique',
-  tagline: 'Documentation du Bus Sémantique',
+  tagline: "Un outil open source pour intéropérer des données hétérogènes techniquement et sémantiquement.",
   url: 'https://assemblee-virtuelle.github.io',
   baseUrl: '/semantic-bus-documentation/',
   onBrokenLinks: 'warn',
