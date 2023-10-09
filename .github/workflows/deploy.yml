@@ -39,7 +39,7 @@ jobs:
         # copies markdown files from the wiki to current folder
       - name: Copy Markdown Files
         run: |
-          cp -r * docs/bus-wiki/
+          cp -r Semantic-Bus.wiki/* docs/bus-wiki/
 
         # saves imported files in main branch
       - name: Commit and Push
