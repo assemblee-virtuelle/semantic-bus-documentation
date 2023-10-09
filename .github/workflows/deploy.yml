@@ -28,6 +28,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: assemblee-virtuelle/Semantic-Bus.wiki.git
+          ref: main
           path: wiki
 
         # copies markdown files from the wiki to current folder
