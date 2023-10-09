@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Semantic Bus',
-  tagline: 'Documentation of the Semantic Bus',
+  title: 'Bus Sémantique',
+  tagline: 'Documentation du Bus Sémantique',
   url: 'https://assemblee-virtuelle.github.io',
   baseUrl: '/semantic-bus-documentation/',
   onBrokenLinks: 'warn',
@@ -16,29 +16,18 @@ module.exports = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr','en'],
   },
 
   themeConfig: {
     navbar: {
-      title: 'Semantic Bus',
+      title: 'Bus Sémantique',
       logo: {
-        alt: 'Semantic Bus logo',
+        alt: 'Logo du Bus Sémantique',
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   to: '/docs',
-        //   // activeBasePath: 'docs',
-        //   label: 'Docs',
-        //   position: 'left',
-        // },
-        // {
-        //   to: '/blog', 
-        //   label: 'Blog', 
-        //   position: 'left'
-        // },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -51,7 +40,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/assemblee-virtuelle/Semantic-Bus',
           label: 'GitHub',
           position: 'right',
         },
@@ -62,8 +51,39 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        // ...Footer links
+        {
+          title: 'Communauté',
+          items: [
+            {
+              label: "Forum de l'Assemblée Virtuelle",
+              href: 'https://forums.assemblee-virtuelle.org/c/projets/bus-semantique/15',
+            },
+          ],
+        },
+        {
+          title: 'Technique',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/assemblee-virtuelle/Semantic-Bus',
+            }
+          ],
+        },
+        {
+          title: 'Articles',
+          items: [
+            {
+              label: 'Data Players',
+              href: 'https://data-players.com/bus-semantique/',
+            },
+            {
+              label: "L'assemblée virtuelle",
+              href: 'https://www.virtual-assembly.org/semantic-bus/',
+            }
+          ],
+        },
       ],
+      copyright: `Copyright © ${new Date().getFullYear()} Assemblée Virtuelle`,
     },
   },
 
@@ -88,27 +108,4 @@ module.exports = {
       }),
     ],
   ],
-
-  scripts: [
-    // "@site/node_modules/zero-md/dist/zero-md.min.js",
-    {
-      src: "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js",
-      type: "module",
-    }
-  ],
-
-  // presets: [
-  //   [
-  //     '@docusaurus/preset-classic',
-  //     {
-  //       docs: {
-  //         sidebarPath: require.resolve('./sidebars.js'),
-  //         // Other options for the documentation
-  //       },
-  //       theme: {
-  //         customCss: require.resolve('./src/css/custom.css'),
-  //       },
-  //     },
-  //   ],
-  // ],
 };

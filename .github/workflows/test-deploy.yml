@@ -1,4 +1,4 @@
-name: Test deployment
+name: Test Deploy to Github Pages
 
 on:
   pull_request:
@@ -8,17 +8,69 @@ on:
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
-  test-deploy:
-    name: Test deployment
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
 
-      - name: Install dependencies
+      # installs the dependancies of 
+      # the docusaurus package with the
+      # package.json file
+      - name: Install Docusaurus dependancies
         run: yarn install --frozen-lockfile
-      - name: Test build website
+
+      # builds the Docusaurus website
+      - name: Build Docusaurus
         run: yarn build
+
+      # checks out the wiki into the repo
+      # Semantic-Bus.wiki
+      - name: Checkout Semantic Bus Wiki Repo
+        uses: actions/checkout@v4
+        with:
+          repository: "assemblee-virtuelle/Semantic-Bus.wiki"
+          ref: "master"
+          path: "Semantic-Bus.wiki"
+          token: ${{ secrets.WIKI_PAT }}
+
+        # lists the files in the semantic wiki folder
+        # used for debugging
+      - name: List Files in Semantic Bus Directory
+        run: |
+          ls -l ./Semantic-Bus.wiki/
+
+        # copies markdown files from the wiki to current folder
+        # replaces the files if already existing
+      - name: Copy Markdown Files
+        run: |
+          \cp -r Semantic-Bus.wiki/* docs/bus-wiki/
+
+        # saves imported files in main branch
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git diff --quiet && git diff --staged --quiet || git commit -am 'Imported Semantic Bus wiki documents'
+          git push
+
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Build output to publish to the `gh-pages` branch:
+          publish_dir: ./build
+          # The following lines assign commit authorship to the official
+          # GH-Actions bot for deploys to `gh-pages` branch:
+          # https://github.com/actions/checkout/issues/13#issuecomment-724415212
+          # The GH actions bot is used by default if you didn't specify the two fields.
+          # You can swap them out with your own user credentials.
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
