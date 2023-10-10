@@ -26,19 +26,14 @@ Le Bus Sémantique est composé de Workflows qui assurent un suivi clair et pré
 
 ![]("../../../static/img/connecteurEntree.png)
 
-### Les connecteurs d'entrée
+### Les connecteurs d'entrée/sortie
 
-Interprètent une variété importante de sources de données en flux poussé et tiré.
+Interprètent une variété importante de sources de données en flux poussé et tiré et permettent d’exposer les flux de données traitées sur l’interface ou le support de votre choix.
 
 ![]("../../../static/img/gestionnairesFlux.png)
 ### Les gestionnaires de flux
 
 Exécutent des tâches variées sur les données et acheminent le flux traité d’un composant à l’autre.
-
-![]("../../../static/img/connecteurSortie.png)
-### Les connecteurs de sorties
-
-Permettent d’exposer les flux de données traitées sur l’interface ou le support de votre choix.
 
 ## Fonctionnalités
 
