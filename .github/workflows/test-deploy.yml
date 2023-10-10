@@ -18,16 +18,6 @@ jobs:
           node-version: 18
           cache: yarn
 
-      # installs the dependancies of 
-      # the docusaurus package with the
-      # package.json file
-      - name: Install Docusaurus dependancies
-        run: yarn install --frozen-lockfile
-
-      # builds the Docusaurus website
-      - name: Build Docusaurus
-        run: yarn build
-
       # checks out the wiki into the repo
       # Semantic-Bus.wiki
       - name: Checkout Semantic Bus Wiki Repo
@@ -48,7 +38,7 @@ jobs:
         # replaces the files if already existing
       - name: Copy Markdown Files
         run: |
-          \cp -r Semantic-Bus.wiki/* docs/technique/bus-wiki/
+          \cp -r Semantic-Bus.wiki/* docs/utilisateur/bus-wiki/
 
         # saves imported files in main branch
       - name: Commit and Push
@@ -57,6 +47,16 @@ jobs:
           git config user.email "actions@github.com"
           git diff --quiet && git diff --staged --quiet || git commit -am 'Imported Semantic Bus wiki documents'
           git push
+
+        # installs the dependancies of 
+      # the docusaurus package with the
+      # package.json file
+      - name: Install Docusaurus dependancies
+        run: yarn install --frozen-lockfile
+
+      # builds the Docusaurus website
+      - name: Build Docusaurus
+        run: yarn build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
@@ -73,4 +73,3 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
-
