@@ -98,7 +98,7 @@ const flexibleContent = "Des tâches dynamiques, modulables et réutilisables or
 
 function BusFeatures(){
   return(
-    <div className={clsx("container","margin--lg")}>
+    <div className={clsx("container","margin-vert--lg")}>
       <div className="row">
         <div className="col col--4">
           <div className="col-demo">
