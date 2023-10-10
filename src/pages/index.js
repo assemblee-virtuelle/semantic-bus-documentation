@@ -69,10 +69,10 @@ function BusData(){
         <h2>Intégrez vos données provenant de : </h2>
         <ul>
           <li className={styles.toolCard}>
-            <Tool label='Bases de données SQL' link='https://www.influxdata.com/' content="Interrogez des BDD PostgreSQL, MySQL, SQLite, Microsoft SQL Server." />
+            <Tool label='Bases de données SQL' link='https://www.postgresql.org/' content="Interrogez des BDD PostgreSQL, MySQL, SQLite, Microsoft SQL Server." />
           </li>
           <li className={styles.toolCard}>
-            <Tool label='MongoDB' link='https://www.influxdata.com/' content="Interrogez des BDD MongoDB." />
+            <Tool label='MongoDB' link='https://www.mongodb.com/fr-fr' content="Interrogez des BDD MongoDB." />
           </li>
           <li className={styles.toolCard}>
             <Tool label='InfluxDB' link='https://www.influxdata.com/' content="Interrogez des BDD InfluDB." />
@@ -81,7 +81,7 @@ function BusData(){
             <Tool label='Fichiers locaux' content="Fichiers au format CSV, XML." />
           </li>
           <li className={styles.toolCard}>
-            <Tool label='Fichiers stockés en ligne'  content="Fichiers stockés sur des serveurs (S)FTP" />
+            <Tool label='Fichiers stockés en ligne' content="Fichiers stockés sur des serveurs (S)FTP" />
           </li>
           <li className={styles.toolCard}>
             <Tool label='API JSON' link='https://fr.wikipedia.org/wiki/JavaScript_Object_Notation' content="Interrogez des APIs au format JSON."/>
@@ -93,6 +93,8 @@ function BusData(){
 }
 
 const accessibleContent = "Une interface graphique qui simplifie la conception, l’édition et la visualisation des traitements de données nécessitant peu de compétences en programmation.";
+const interoperableContent = "Des connecteurs d’entrées et de sorties qui interprètent une grande variété de formats, de protocoles et de structures de données en flux poussés et tirés.";
+const flexibleContent = "Des tâches dynamiques, modulables et réutilisables orientées graphe d’objet pour raisonner au plus près des données, sans les modifier ou réduire leur complexité.";
 
 function BusFeatures(){
   return(
@@ -100,14 +102,18 @@ function BusFeatures(){
       <div className="row">
         <div className="col col--4">
           <div className="col-demo">
-           <Card subtitle="Accessible" content={accessibleContent}></Card>
+           <Card subtitle="Accessible" content={accessibleContent} imgUrl="img/accessible.png"></Card>
           </div>
         </div>
         <div className="col col--4">
-          <div className="col-demo">4</div>
+          <div className="col-demo">
+            <Card subtitle="Interoperable" content={interoperableContent} imgUrl="img/interoperable.png"></Card>
+          </div>
         </div>
         <div className="col col--4">
-          <div className="col-demo">4</div>
+          <div className="col-demo">
+            <Card subtitle="Flexible" content={flexibleContent} imgUrl="img/flexible.png"></Card>
+          </div>
         </div>
       </div>
     </div>

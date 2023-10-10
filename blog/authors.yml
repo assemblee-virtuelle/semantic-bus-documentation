@@ -1,17 +1,23 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+emiliep:
+  name: Emilie Pacheco
+  title: Maintainer du Bus Sémantique
+  url: https://github.com/Mikoteko
+  image_url: img/contributors/Emilie-Pacheco.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+bastiens:
+  name: Bastien Siguier
+  title: Maintainer du Bus Sémantique
+  url: https://github.com/BastienSig
+  image_url: img/contributors/Bastien-Siguier.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+simonl:
+  name: Simon Louvet
+  title: Co-créateur du Bus Sémantique
+  url: https://github.com/simonLouvet
+  image_url: img/contributors/Simon-Louvet.png
+
+busteam:
+  name: Semantic Bus
+  title: L'équipe du Bus Sémantique
+  url: https://github.com/assemblee-virtuelle/Semantic-Bus
+  image_url: img/logo-grappe.png
