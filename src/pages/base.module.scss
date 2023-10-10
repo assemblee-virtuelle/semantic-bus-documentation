@@ -7,9 +7,9 @@
     --color-white: #f5f5f5;
     --color-black: black;
     --color-primary: #6ABFEB;
-    --color-secondary: #282c34;
-    --color-tertiary: #435B5B;
-    --color-secondary-darken: #20232a;
+    --color-secondary: var(--ifm-color-primary);
+    --color-tertiary: #457e9a;
+    --color-secondary-darken: var(--ifm-color-primary);
     
     p {
       margin: 0;

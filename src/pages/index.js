@@ -1,10 +1,10 @@
 import React from 'react';
-import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index/index.module.scss';
 import clsx from 'clsx';
 import Tool from './index/Tool';
+import Card from './index/Card';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -62,21 +62,55 @@ function HomepageHeader() {
 // </section>
 // }
 
-function BusFeatures(){
+function BusData(){
   return(
-    <section className={classnames(styles.tools, styles.contrast)}>
+    <section className={clsx(styles.tools, styles.contrast)}>
       <div className={styles.wrapper}>
         <h2>Intégrez vos données provenant de : </h2>
         <ul>
           <li className={styles.toolCard}>
-            <Tool label='InfluxDB' link='https://www.influxdata.com/' />
+            <Tool label='Bases de données SQL' link='https://www.influxdata.com/' content="Interrogez des BDD PostgreSQL, MySQL, SQLite, Microsoft SQL Server." />
           </li>
           <li className={styles.toolCard}>
-            <Tool label='Google Sheet' link='https://www.google.fr/intl/fr/sheets/about/' />
+            <Tool label='MongoDB' link='https://www.influxdata.com/' content="Interrogez des BDD MongoDB." />
+          </li>
+          <li className={styles.toolCard}>
+            <Tool label='InfluxDB' link='https://www.influxdata.com/' content="Interrogez des BDD InfluDB." />
+          </li>
+          <li className={styles.toolCard}>
+            <Tool label='Fichiers locaux' content="Fichiers au format CSV, XML." />
+          </li>
+          <li className={styles.toolCard}>
+            <Tool label='Fichiers stockés en ligne'  content="Fichiers stockés sur des serveurs (S)FTP" />
+          </li>
+          <li className={styles.toolCard}>
+            <Tool label='API JSON' link='https://fr.wikipedia.org/wiki/JavaScript_Object_Notation' content="Interrogez des APIs au format JSON."/>
           </li>
         </ul>
       </div> 
     </section>
+  );
+}
+
+const accessibleContent = "Une interface graphique qui simplifie la conception, l’édition et la visualisation des traitements de données nécessitant peu de compétences en programmation.";
+
+function BusFeatures(){
+  return(
+    <div className={clsx("container","margin--lg")}>
+      <div className="row">
+        <div className="col col--4">
+          <div className="col-demo">
+           <Card subtitle="Accessible" content={accessibleContent}></Card>
+          </div>
+        </div>
+        <div className="col col--4">
+          <div className="col-demo">4</div>
+        </div>
+        <div className="col col--4">
+          <div className="col-demo">4</div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -89,6 +123,7 @@ export default function Home() {
       description={`Documentation du ${siteConfig.title}`}>
       <div className={styles.layoutContainer}>
         <HomepageHeader />
+        <BusData />
         <BusFeatures />
       </div>
     </Layout>
