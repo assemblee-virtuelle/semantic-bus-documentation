@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksemantic_bus_documentation=self.webpackChunksemantic_bus_documentation||[]).push([[9271],{3534:e=>{e.exports=JSON.parse('[{"label":"bienvenue","permalink":"/semantic-bus-documentation/blog/tags/bienvenue","count":1},{"label":"bus s\xe9mantique","permalink":"/semantic-bus-documentation/blog/tags/bus-semantique","count":1}]')}}]);

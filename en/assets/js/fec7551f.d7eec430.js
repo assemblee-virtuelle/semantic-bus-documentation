@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksemantic_bus_documentation=self.webpackChunksemantic_bus_documentation||[]).push([[2108],{5983:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/semantic-bus-documentation/en/blog/tags/hola","allTagsPath":"/semantic-bus-documentation/en/blog/tags","count":1}')}}]);
