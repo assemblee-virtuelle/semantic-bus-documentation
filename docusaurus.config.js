@@ -48,6 +48,10 @@ module.exports = {
         // ...Other navigation items
       ],
     },
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
+      darkTheme: require('prism-react-renderer/themes/duotoneLight'),
+    },
     footer: {
       style: 'dark',
       links: [
@@ -108,4 +112,5 @@ module.exports = {
       }),
     ],
   ],
+  plugins: ['docusaurus-plugin-sass'],
 };
