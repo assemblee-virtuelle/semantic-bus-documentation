@@ -6,7 +6,7 @@ tags: [bus sémantique]
 
 # Bienvenue sur la documentation du bus sémantique 🌻
 
-Le Bus Sémantique peut être considéré comme une pierre de Rosette pour le domaine des données.
+Le Bus Sémantique peut être considéré comme une Pierre de Rosette pour le domaine des données.
 
 C'est un logiciel coopératif hébergé dans le cloud (SAAS) qui mélange les concepts d'ESB (Enterprise Service Bus) et d'ETL (Extract Transform Load).
 
