@@ -33,6 +33,16 @@ Si on applique `{$.key}.toLowerCase();` sur notre donnée, on obtiendra par exem
 0 : cartographie des acteurs de la bifurcation - guingamp climat
 ```
 
+Exemple de donnée : 
+```json
+[{ "field_1497647" : "500", "id" : 4 }, { "field_1497647" : "200", "id" : 3 }]
+```
+
+Si on veut faire une somme de tous les field_1497647, on pourra utiliser le composant JSEval avec : 
+```js
+{$..}.reduce((acc, obj) => acc + parseInt(obj.field_1497647), 0);
+```
+
 ### Mise en garde ⚠️ 
 
 * N'oubliez pas d'utiliser un composant Deeper Focus si nécessaire avant son utilisation.
