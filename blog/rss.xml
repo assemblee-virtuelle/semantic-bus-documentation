@@ -4,10 +4,18 @@
         <title>Bus Sémantique Blog</title>
         <link>https://assemblee-virtuelle.github.io/semantic-bus-documentation/blog</link>
         <description>Bus Sémantique Blog</description>
-        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Dec 2023 13:42:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[test]]></title>
+            <link>https://assemblee-virtuelle.github.io/semantic-bus-documentation/blog/test</link>
+            <guid>https://assemblee-virtuelle.github.io/semantic-bus-documentation/blog/test</guid>
+            <pubDate>Wed, 06 Dec 2023 13:42:00 GMT</pubDate>
+            <description><![CDATA[test]]></description>
+            <content:encoded><![CDATA[<p>test</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Bienvenue]]></title>
             <link>https://assemblee-virtuelle.github.io/semantic-bus-documentation/blog/bienvenue</link>
