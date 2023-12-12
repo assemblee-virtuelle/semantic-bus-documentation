@@ -17,7 +17,10 @@ Le Bus Sémantique est ainsi capable de s'adapter à divers écosystèmes et de 
 
 Au fil des années, le bus sémantique a connu de nombreuses évolutions, majoritairement sur le moteur et la gestion des flux dans le but de traiter de plus gros volumes de données et d’optimiser les performances. À terme, l’objectif est de pouvoir faire du traitement “Big Data”.
 
-Le Bus Sémantique est sous licence GNU GLP v3.0, compatible sur toutes les distributions Linux. 
+Le Bus Sémantique est sous licence GNU GLP v3.0, compatible sur toutes les distributions Linux.
+
+> [!NOTE]
+> Logiciel est en version bêta. Le moteur, le design, l’ergonomie et certaines fonctionnalités sont en cours de développement. 
 
 ## Le Bus Sémantique va vous permettre de réaliser de multiples usages tels que :
 
@@ -29,9 +32,5 @@ Le Bus Sémantique est sous licence GNU GLP v3.0, compatible sur toutes les dist
 -  Appeler et mettre à disposition des web services internes (micro traitement spécialisé et réutilisable) et externe au Bus Sémantique.
 -  Traduire une donnée sémantique source en une donnée sémantique cible.
 
-## Tester le Bus Sémantique en ligne
-La coopérative Data Players, principale contributrice du projet avec l’Assemblée Virtuelle, héberge une version SAS du Bus Sémantique sur https://grappe.io afin de pouvoir tester ces capacités sans avoir à l’installer. 
-
-:::caution 
-Logiciel est en version bêta. Le moteur, le design, l’ergonomie et certaines fonctionnalités sont en cours de développement. 
-:::
+> [!TIP]
+> La coopérative Data Players, principale contributrice du projet avec l’Assemblée Virtuelle, héberge une version SAS du Bus Sémantique sur [Grappe](https://grappe.io) afin de pouvoir tester ces capacités sans avoir à l’installer. 
