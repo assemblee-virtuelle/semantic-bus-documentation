@@ -32,4 +32,6 @@ Le Bus Sémantique est sous licence GNU GLP v3.0, compatible sur toutes les dist
 ## Tester le Bus Sémantique en ligne
 La coopérative Data Players, principale contributrice du projet avec l’Assemblée Virtuelle, héberge une version SAS du Bus Sémantique sur https://grappe.io afin de pouvoir tester ces capacités sans avoir à l’installer. 
 
-:::caution Logiciel est en version bêta. Le moteur, le design, l’ergonomie et certaines fonctionnalités sont en cours de développement. :::
+:::caution 
+Logiciel est en version bêta. Le moteur, le design, l’ergonomie et certaines fonctionnalités sont en cours de développement. 
+:::
