@@ -19,7 +19,7 @@ Au fil des années, le bus sémantique a connu de nombreuses évolutions, majori
 
 Le Bus Sémantique est sous licence GNU GLP v3.0, compatible sur toutes les distributions Linux. 
 
-Remarque : Logiciel est en version bêta. Le moteur, le design, l’ergonomie et certaines fonctionnalités sont en cours de développement.
+:::caution Logiciel est en version bêta. Le moteur, le design, l’ergonomie et certaines fonctionnalités sont en cours de développement.:
 
 ## Le Bus Sémantique va vous permettre de réaliser de multiples usages tels que :
 
