@@ -12,17 +12,17 @@ Cette page est encore en cours de construction.
 
 Tout d'abord, il va vous falloir un compte utilisateur pour accéder à l'application, seule une  adresse email valide vous sera demandée. Une fois connecté, vous arrivez sur la page principale du Bus Sémantique.
 
-![Screenshot du dashboard](static/img/screenshot-dashboard.png)
+![Screenshot du dashboard]("../../../static/img/screenshot-dashboard.png)
 
 Le Dashboard, c’est ici que vous retrouverez tous vos Workflow personnelles et partagées que vous pourrez créer votre premier Workflow.
 
-![Screenshot Nouveau Workflow](static/img/screenshot-newworkflow.png)
+![Screenshot Nouveau Workflow]("../../../static/img/screenshot-newworkflow.png)
 
 Appuyer sur le bouton “+” pour créer un nouveau Workflow
 
 Renseigner le Nom, une description (facultative) et laisser le nombre d’exécutables consultable à 1, nous y reviendrons. Sélectionner la version du moteur V2 pour avoir la nouvelle version des composants. Vous pouvez maintenant valider les informations.
 
-![Screenshot Nouveau Workflow](static/img/screenshot-editworkflow.png)
+![Screenshot Nouveau Workflow]("../../../static/img/screenshot-editworkflow.png)
 
 Votre Workflow est désormais créé, vous pouvez voir un nouveau menu qui vient d’apparaître à gauche, ce sont les fonctionnalités, nous y reviendrons. Sur le volet à droite se trouve les composants et l’espace “gris” vide et votre Workflow.
 
@@ -30,7 +30,7 @@ Votre Workflow est désormais créé, vous pouvez voir un nouveau menu qui vient
 
 Les composants interagissent sur les données et entre eux. Ils sont catégorisés en trois principaux groupes : les connecteurs d’entrées, de sorties et les gestionnaires de flux.
 
-![composant Framacalc](static/img/component-framacalc.png)
+![composant Framacalc]("../../../static/img/component-framacalc.png)
 
 Les connecteurs d’entrée permettent de connecter une source de données sur le Workflow de plusieurs manières :
 
